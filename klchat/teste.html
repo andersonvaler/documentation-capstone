@@ -1,0 +1,1353 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2020.5.2"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 719.368,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:5000/perfil",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "BAD REQUEST",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "278"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:19:00 GMT"
+						}
+					],
+					"content": {
+						"size": 278,
+						"mimeType": "application/json",
+						"text": "{\n  \"error\": \"Falta dados obrigat\\u00f3rios\", \n  \"obrigat\\u00f3rios\": [\n    \"logradouro\", \n    \"numero\", \n    \"bairro\", \n    \"cidade\", \n    \"estado\", \n    \"cep\"\n  ], \n  \"faltante\": [\n    \"logradouro\", \n    \"numero\", \n    \"bairro\", \n    \"cidade\", \n    \"estado\", \n    \"cep\"\n  ]\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 719.368,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "EDITAR ENDERECO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 1002.8779999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/perfil",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "190"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:38:02 GMT"
+						}
+					],
+					"content": {
+						"size": 190,
+						"mimeType": "application/json",
+						"text": "{\n  \"id\": 10, \n  \"logradouro\": \"Rua Das Palmeiras\", \n  \"numero\": \"100\", \n  \"complemento\": null, \n  \"bairro\": \"Teste\", \n  \"cidade\": \"Briocholandia\", \n  \"estado\": \"RS\", \n  \"cep\": \"35000000\"\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1002.8779999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "VER ENDERECO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 2074.9390000000003,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5000/perfil",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"logradouro\": \"Rua das palmeiras\",\n    \"numero\": 100,\n    \"bairro\": \"Teste\",\n    \"cidade\": \"Briocholandia\",\n    \"estado\":\"RS\",\n    \"cep\": \"35000000\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "31"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:37:40 GMT"
+						}
+					],
+					"content": {
+						"size": 31,
+						"mimeType": "application/json",
+						"text": "{\n  \"endereco\": \"cadastrado\"\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2074.9390000000003,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CADASTRAR ENDERECO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 679.0880000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/vendas-andamento",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"teste\": 1\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 500,
+					"statusText": "INTERNAL SERVER ERROR",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:41:41 GMT"
+						}
+					],
+					"content": {
+						"size": 15997,
+						"mimeType": "text/html; charset=utf-8",
+						"text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>KeyError: &#x27;status&#x27; // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not accidentally trigger a request to /favicon.ico which might\n         change the application's state. -->\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script type=\"text/javascript\">\n      var TRACEBACK = 139929144236736,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"egTohZ5lK8ddbVTTuYaD\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>KeyError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">KeyError: &#x27;status&#x27;</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  <h3></h3>\n  <ul><li><div class=\"frame\" id=\"frame-139929144237120\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2088</em>,\n      in <code class=\"function\">__call__</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to apply middleware.</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929144235776\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2073</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929144236016\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2070</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error: t.Optional[BaseException] = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:  # noqa: B001</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929144237312\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1515</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line current\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self,</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>rv: t.Union[ResponseReturnValue, HTTPException],</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929144236592\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1513</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>self.try_trigger_before_first_request_functions()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>request_started.send(self)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929142901344\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1499</em>,\n      in <code class=\"function\">dispatch_request</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">            </span>getattr(rule, &quot;provide_automatic_options&quot;, False)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>and req.method == &quot;OPTIONS&quot;</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>):</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>return self.make_default_options_response()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>error handling.</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929142902736\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py\"</cite>,\n      line <em class=\"line\">125</em>,\n      in <code class=\"function\">decorator</code></h4>\n  <div class=\"source library\"><pre class=\"line before\"><span class=\"ws\">        </span>def decorator(*args, **kwargs):</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>verify_jwt_in_request(optional, fresh, refresh, locations)</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># Compatibility with flask &lt; 2.0</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>return current_app.ensure_sync(fn)(*args, **kwargs)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except AttributeError as e:  # pragma: no cover</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>if str(e) != &quot;&#x27;Flask&#x27; object has no attribute &#x27;ensure_sync&#x27;&quot;:</pre>\n<pre class=\"line after\"><span class=\"ws\">                    </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>return fn(*args, **kwargs)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139929142900672\">\n  <h4>File <cite class=\"filename\">\"/home/anderson/KenzieAcademy/Q3/capstone-q3/app/views/vendas_andamento_views.py\"</cite>,\n      line <em class=\"line\">43</em>,\n      in <code class=\"function\">venda</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>for compra in carrinhos:</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>if not data:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>venda = Vendas.query.filter_by(carrinho_id=compra).all()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>else:</pre>\n<pre class=\"line current\"><span class=\"ws\">            </span>venda = Vendas.query.filter_by(carrinho_id=compra,status_id=data[&#x27;status&#x27;]).all()</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>if venda:</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>retorna.append(venda)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>venda = &quot;&quot;</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre></div>\n</div>\n</ul>\n  <blockquote>KeyError: &#x27;status&#x27;</blockquote>\n</div>\n\n<div class=\"plain\">\n    <p>\n      This is the Copy/Paste friendly version of the traceback.\n    </p>\n    <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 2088, in __call__\n    return self.wsgi_app(environ, start_response)\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 2073, in wsgi_app\n    response = self.handle_exception(e)\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 2070, in wsgi_app\n    response = self.full_dispatch_request()\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 1515, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 1513, in full_dispatch_request\n    rv = self.dispatch_request()\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py&quot;, line 1499, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py&quot;, line 125, in decorator\n    return current_app.ensure_sync(fn)(*args, **kwargs)\n  File &quot;/home/anderson/KenzieAcademy/Q3/capstone-q3/app/views/vendas_andamento_views.py&quot;, line 43, in venda\n    venda = Vendas.query.filter_by(carrinho_id=compra,status_id=data[&#x27;status&#x27;]).all()\nKeyError: &#x27;status&#x27;</textarea>\n</div>\n<div class=\"explanation\">\n  The debugger caught an exception in your WSGI application.  You can now\n  look at the traceback which led to the error.  <span class=\"nojavascript\">\n  If you enable JavaScript you can also use additional features such as code\n  execution (if the evalex feature is enabled), automatic pasting of the\n  exceptions and much more.</span>\n</div>\n      <div class=\"footer\">\n        Brought to you by <strong class=\"arthur\">DON'T PANIC</strong>, your\n        friendly Werkzeug powered traceback interpreter.\n      </div>\n    </div>\n\n    <div class=\"pin-prompt\">\n      <div class=\"inner\">\n        <h3>Console Locked</h3>\n        <p>\n          The console is locked and needs to be unlocked by entering the PIN.\n          You can find the PIN printed out on the standard output of your\n          shell that runs the server.\n        <form>\n          <p>PIN:\n            <input type=text name=pin size=14>\n            <input type=submit name=btn value=\"Confirm Pin\">\n        </form>\n      </div>\n    </div>\n  </body>\n</html>\n\n<!--\n\nTraceback (most recent call last):\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 2088, in __call__\n    return self.wsgi_app(environ, start_response)\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 2073, in wsgi_app\n    response = self.handle_exception(e)\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 2070, in wsgi_app\n    response = self.full_dispatch_request()\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 1515, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 1513, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask/app.py\", line 1499, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py\", line 125, in decorator\n    return current_app.ensure_sync(fn)(*args, **kwargs)\n  File \"/home/anderson/KenzieAcademy/Q3/capstone-q3/app/views/vendas_andamento_views.py\", line 43, in venda\n    venda = Vendas.query.filter_by(carrinho_id=compra,status_id=data['status']).all()\nKeyError: 'status'\n\n-->\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 679.0880000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "VER VENDAS"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/vendas/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "VER VENDA ID"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/vendas/1/cancelar",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CANCELAR VENDA"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/vendas/1/despachar",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DESPACHAR PRODUTOS"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 644.5509999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/vendas/13/aprovar",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "BAD REQUEST",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "73"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:35:08 GMT"
+						}
+					],
+					"content": {
+						"size": 73,
+						"mimeType": "application/json",
+						"text": "{\n  \"Error\": \"Vendas n\\u00e3o dispon\\u00edvel para este usu\\u00e1rio.\"\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 644.5509999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "APROVAR VENDA"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 4305.885,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/finalizar-carrinho",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "202"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:09:33 GMT"
+						}
+					],
+					"content": {
+						"size": 202,
+						"mimeType": "application/json",
+						"text": "{\n  \"id\": 13, \n  \"valor_total\": 1200.0, \n  \"nota_fiscal\": null, \n  \"cupom_id\": 0, \n  \"data_venda\": \"Tue, 20 Jul 2021 00:00:00 GMT\", \n  \"status_id\": 2, \n  \"endereco_entrega_id\": 9, \n  \"carrinho_id\": 3\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4305.885,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "FINALIZAR CARRINHO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 1803.542,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5000/carrinho",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 204,
+					"statusText": "NO CONTENT",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 03:32:18 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1803.542,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "ESVAZIAR CARRINHO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 922.819,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5000/carrinho/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 204,
+					"statusText": "NO CONTENT",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:04:36 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 922.819,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DELETE PRODUTO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 786.153,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:5000/carrinho/9",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "BAD REQUEST",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "67"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:44:26 GMT"
+						}
+					],
+					"content": {
+						"size": 67,
+						"mimeType": "application/json",
+						"text": "{\n  \"Error\": \"Este produto n\\u00e3o se encontra neste carrinho.\"\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 786.153,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "EDITAR CARRINHO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 1109.231,
+				"request": {
+					"method": "GET",
+					"url": "https://klchat.herokuapp.com/produtos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:31:25 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1354"
+						},
+						{
+							"name": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"content": {
+						"size": 1354,
+						"mimeType": "application/json",
+						"text": "[{\"id\":6,\"modelo\":\"tv_40_led\",\"descricao\":\"Tv led 40 polegadas\",\"marca\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3},{\"id\":7,\"modelo\":\"tv_50_led\",\"descricao\":\"Tv led 50 polegadas\",\"marca\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3},{\"id\":8,\"modelo\":\"mk_s_12\",\"descricao\":\"Caixa de som\",\"marca\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3},{\"id\":3,\"modelo\":\"MK-M_12\",\"descricao\":\"Camiseta\",\"marca\":\"Polo\",\"qtd_estoque\":10.0,\"valor_unitario\":310.0,\"categoria_id\":1,\"lojista_id\":1},{\"id\":10,\"modelo\":\"brioche\",\"descricao\":\"cacetinho de chocolate\",\"marca\":\"padaria A\",\"qtd_estoque\":50.0,\"valor_unitario\":0.0,\"categoria_id\":1,\"lojista_id\":7},{\"id\":1,\"modelo\":\"Mk_1\",\"descricao\":\"Mesinha\",\"marca\":\"Granejeira\",\"qtd_estoque\":7.0,\"valor_unitario\":0.0,\"categoria_id\":1,\"lojista_id\":1},{\"id\":2,\"modelo\":\"gold_plus\",\"descricao\":\"Caneta Governamental\",\"marca\":\"Laranja\",\"qtd_estoque\":9997.0,\"valor_unitario\":3000.0,\"categoria_id\":1,\"lojista_id\":1},{\"id\":5,\"modelo\":\"tv_32_led\",\"descricao\":\"Tv led 32 polegadas\",\"marca\":\"philco\",\"qtd_estoque\":8.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":1},{\"id\":9,\"modelo\":\"15W\",\"descricao\":\"Lampada\",\"marca\":\"Philips\",\"qtd_estoque\":0.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":1}]\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1109.231,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "BUSCA PRODUTO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 286.90500000000003,
+				"request": {
+					"method": "GET",
+					"url": "https://klchat.herokuapp.com/produtos/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 18 Jul 2021 18:46:13 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "472"
+						},
+						{
+							"name": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"content": {
+						"size": 472,
+						"mimeType": "application/json",
+						"text": "[{\"id\":6,\"descricao\":\"Tv led 40 polegadas\",\"marca\":\"Philips\",\"fabricante\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3},{\"id\":7,\"descricao\":\"Tv led 50 polegadas\",\"marca\":\"Philips\",\"fabricante\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3},{\"id\":8,\"descricao\":\"Caixa de som\",\"marca\":\"Philips\",\"fabricante\":\"Philips\",\"qtd_estoque\":10.0,\"valor_unitario\":1200.0,\"categoria_id\":1,\"lojista_id\":3}]\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 286.90500000000003,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET PRODUTOS LOJA ID"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 3458.52,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/produtos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1913"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 12:42:35 GMT"
+						}
+					],
+					"content": {
+						"size": 1913,
+						"mimeType": "application/json",
+						"text": "[\n  {\n    \"id\": 6, \n    \"modelo\": \"tv_40_led\", \n    \"descricao\": \"Tv led 40 polegadas\", \n    \"marca\": \"Philips\", \n    \"qtd_estoque\": 10.0, \n    \"valor_unitario\": 1200.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 3\n  }, \n  {\n    \"id\": 7, \n    \"modelo\": \"tv_50_led\", \n    \"descricao\": \"Tv led 50 polegadas\", \n    \"marca\": \"Philips\", \n    \"qtd_estoque\": 10.0, \n    \"valor_unitario\": 1200.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 3\n  }, \n  {\n    \"id\": 8, \n    \"modelo\": \"mk_s_12\", \n    \"descricao\": \"Caixa de som\", \n    \"marca\": \"Philips\", \n    \"qtd_estoque\": 10.0, \n    \"valor_unitario\": 1200.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 3\n  }, \n  {\n    \"id\": 9, \n    \"modelo\": \"15W\", \n    \"descricao\": \"Lampada\", \n    \"marca\": \"Philips\", \n    \"qtd_estoque\": 10.0, \n    \"valor_unitario\": 1200.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 1\n  }, \n  {\n    \"id\": 3, \n    \"modelo\": \"MK-M_12\", \n    \"descricao\": \"Camiseta\", \n    \"marca\": \"Polo\", \n    \"qtd_estoque\": 10.0, \n    \"valor_unitario\": 310.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 1\n  }, \n  {\n    \"id\": 10, \n    \"modelo\": \"brioche\", \n    \"descricao\": \"cacetinho de chocolate\", \n    \"marca\": \"padaria A\", \n    \"qtd_estoque\": 50.0, \n    \"valor_unitario\": 0.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 7\n  }, \n  {\n    \"id\": 1, \n    \"modelo\": \"Mk_1\", \n    \"descricao\": \"Mesinha\", \n    \"marca\": \"Granejeira\", \n    \"qtd_estoque\": 7.0, \n    \"valor_unitario\": 0.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 1\n  }, \n  {\n    \"id\": 2, \n    \"modelo\": \"gold_plus\", \n    \"descricao\": \"Caneta Governamental\", \n    \"marca\": \"Laranja\", \n    \"qtd_estoque\": 9997.0, \n    \"valor_unitario\": 3000.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 1\n  }, \n  {\n    \"id\": 5, \n    \"modelo\": \"tv_32_led\", \n    \"descricao\": \"Tv led 32 polegadas\", \n    \"marca\": \"philco\", \n    \"qtd_estoque\": 8.0, \n    \"valor_unitario\": 1200.0, \n    \"categoria_id\": 1, \n    \"lojista_id\": 1\n  }\n]\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3458.52,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "VER TODOS OS PRODUTOS"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 17798.037,
+				"request": {
+					"method": "POST",
+					"url": "https://klchat.herokuapp.com/produtos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"descricao\": \"Lampada led\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "BAD REQUEST",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:42:49 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "158"
+						},
+						{
+							"name": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"content": {
+						"size": 158,
+						"mimeType": "application/json",
+						"text": "{\"Error\":\"Faltam campos obrigat\\u00f3rios\",\"Recebido\":[\"descricao\"],\"Faltante\":[\"marca\",\"modelo\",\"qtd_estoque\",\"valor_unitario\",\"lojista_id\",\"categoria_id\"]}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 17798.037,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CADASTRO PRODUTO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 1180.356,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5000/carrinho",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"produto_id\": 9\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "BAD REQUEST",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "115"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:46:01 GMT"
+						}
+					],
+					"content": {
+						"size": 115,
+						"mimeType": "application/json",
+						"text": "{\n  \"Error\": \"A loja n\\u00e3o possui esta quantidade no estoque.\", \n  \"Recebido\": 1.0, \n  \"Dispon\\u00edvel\": 0.0\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1180.356,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "INSERIR NO CARRINHO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 813.8530000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5000/carrinho",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "43"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:44:36 GMT"
+						}
+					],
+					"content": {
+						"size": 43,
+						"mimeType": "application/json",
+						"text": "{\n  \"carrinho_id\": 35, \n  \"produtos\": []\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 813.8530000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "VER CARRINHO"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 3421.502,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5000/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"cliente3@mail.com\",\n\t\"senha\": \"1234\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "288"
+						},
+						{
+							"name": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 20 Jul 2021 13:44:03 GMT"
+						}
+					],
+					"content": {
+						"size": 288,
+						"mimeType": "application/json",
+						"text": "{\n  \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYyNjc4ODY0MywianRpIjoiMzlmZDdjZDQtYTZlZi00OTMyLWFmNzAtZWNkNzRjYWU4MmU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNsaWVudGUzQG1haWwuY29tIiwibmJmIjoxNjI2Nzg4NjQzfQ.xxiweME5Bchsdq3qaBRfSUf-goQwwnrErFc5JdxiqGI\"\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3421.502,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "LOGIN"
+			},
+			{
+				"startedDateTime": "2021-07-20T14:40:31.604Z",
+				"time": 769.312,
+				"request": {
+					"method": "POST",
+					"url": "https://klchat.herokuapp.com/signup",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"tipo_usuario\": \"lojista\",\n\t\"nome\": \"Valler\",\n\t\"email\": \"valler@mail.com\",\n\t\"telefone\": \"38999979979\",\n\t\"cnpj\": \"26380744000172\",\n\t\"senha\": \"1234\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 18 Jul 2021 18:44:16 GMT"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Content-Length",
+							"value": "226"
+						},
+						{
+							"name": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"content": {
+						"size": 226,
+						"mimeType": "application/json",
+						"text": "{\"id\":5,\"nome\":\"Valler\",\"email\":\"valler@mail.com\",\"senha\":\"pbkdf2:sha256:260000$Ab4qIIQwjk$ee105904447407e1a04545fd78e937fc96f62297318f47a9cec51b51d28ad98d\",\"cnpj\":\"26380744000172\",\"telefone\":\"38999979979\",\"endereco_id\":null}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 769.312,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CADASTRO USER"
+			}
+		]
+	}
+}
