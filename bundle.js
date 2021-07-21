@@ -13364,7 +13364,7 @@ var app = (function () {
                         T.src !==
                             (I = "https://insomnia.rest/images/run.svg") &&
                             v(T, "src", "https://insomnia.rest/images/run.svg"),
-                        v(T, "alt", "Run in Insomnia"),
+                        v(T, "alt", "Import Insomnia JSON"),
                         v(j, "href", e[8]),
                         v(j, "target", "_blank"),
                         v(L, "class", "run"),
@@ -13505,7 +13505,9 @@ var app = (function () {
         const c = window.location.origin + window.INSOMNIA_URL,
             u = `https://insomnia.rest/run/?label=${encodeURIComponent(
                 s.workspace.name
-            )}&uri=${encodeURIComponent(c)}`;
+            )}&uri=${encodeURIComponent(
+                "https://drive.google.com/file/d/1Y4ROAA01ShNUWa0qxAQEosAdEIQcIAmf/view?usp=sharing"
+            )}`;
         let d = !1,
             p = "true" === (localStorage.getItem("show-examples") || "true");
         return (
