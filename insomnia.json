@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2021-07-21T16:21:01.567Z",
+    "__export_date": "2021-07-21T20:18:41.698Z",
     "__export_source": "insomnia.desktop.app:v2020.5.2",
     "resources": [
         {
@@ -10,7 +10,7 @@
             "modified": 1626884345314,
             "created": 1626309195711,
             "url": "{{ heroku }}/signup",
-            "name": "CADASTRAR USUÁRIO",
+            "name": "CADASTRO USER",
             "description": "Cadastro de cliente podendo ser Pessoa Fisica, Pessoa Juridica e Lojista (quem vai fornecer os produtos na plataforma).",
             "method": "POST",
             "body": {
@@ -61,15 +61,15 @@
         {
             "_id": "req_97808f4059c8458d93447773f3ad64a9",
             "parentId": "fld_b91ca755271d4da9a767eea9f7d7d00d",
-            "modified": 1626882110328,
+            "modified": 1626898068415,
             "created": 1626287014801,
-            "url": "{{ heroku }}/login",
-            "name": "FAZER LOGIN",
+            "url": "{{ local }}/login",
+            "name": "LOGIN",
             "description": "Gera um token de acesso do tipo Beater Token JWT.",
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"email\": \"email@email.com\",\n\t\"senha\": \"senha\"\n}"
+                "text": "{\n\t\"email\": \"email@email.net\",\n\t\"senha\": \"senha\"\n}"
             },
             "parameters": [],
             "headers": [
@@ -91,9 +91,113 @@
             "_type": "request"
         },
         {
+            "_id": "req_b758ec91410e469fb7d1bbcc1dd25078",
+            "parentId": "fld_dd301244ba26413ab10cfd4d14b8d9df",
+            "modified": 1626898490251,
+            "created": 1626896968201,
+            "url": "{{ heroku }}/clientes",
+            "name": "VER CLIENTES",
+            "description": "Esta rota lista todos os clientes cadastrados.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": { "type": "bearer", "token": "{{token}}" },
+            "metaSortKey": -1626896968201,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_dd301244ba26413ab10cfd4d14b8d9df",
+            "parentId": "wrk_95cd314d3a2f47038960c48fc46b1a3b",
+            "modified": 1626896276148,
+            "created": 1626896239237,
+            "name": "VER PERFIL",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1626843980470.5,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_e94dc7c6a5d242ee964051c909004a98",
+            "parentId": "fld_dd301244ba26413ab10cfd4d14b8d9df",
+            "modified": 1626898542984,
+            "created": 1626896960310,
+            "url": "{{ heroku }}/lojistas",
+            "name": "VER LOJISTAS",
+            "description": "Esta rota lista todos os lojistas cadastrados.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": { "type": "bearer", "token": "{{token}}" },
+            "metaSortKey": -1626896960310,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1a579b01a0844937b8fedd7dd3635e7a",
+            "parentId": "fld_dd301244ba26413ab10cfd4d14b8d9df",
+            "modified": 1626898577365,
+            "created": 1626896294708,
+            "url": "{{ heroku }}/lojistas/1",
+            "name": "VER PERFIL LOJISTA ID",
+            "description": "Esta rota mostra o perfil do lojista por ID.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": { "type": "bearer", "token": "{{token}}" },
+            "metaSortKey": -1626896294708,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_eb31017a19064832848575f3ca4f8844",
+            "parentId": "fld_dd301244ba26413ab10cfd4d14b8d9df",
+            "modified": 1626898511879,
+            "created": 1626896270416,
+            "url": "{{ heroku }}/clientes/1",
+            "name": "VER PERFIL CLIENTE ID",
+            "description": "Esta rota mostra os dados do cliente por ID.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": { "type": "bearer", "token": "{{token}}" },
+            "metaSortKey": -1626896270516,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_4cb716c2d089498eb125af7cfbb208c7",
             "parentId": "fld_38d9350a588f493aa3bb5ad88ecb2d7f",
-            "modified": 1626884348881,
+            "modified": 1626898183075,
             "created": 1626786334929,
             "url": "{{ heroku }}/endereco",
             "name": "CADASTRAR ENDERECO",
@@ -101,7 +205,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"logradouro\": \"Rua das palmeiras\",\n    \"numero\": 100,\n    \"bairro\": \"Teste\",\n    \"cidade\": \"Briocholandia\",\n    \"estado\":\"RS\",\n    \"cep\": \"35000000\",\n\t\"complemento\": \"casa\"\n}"
+                "text": "{\n\t\"logradouro\": \"Nome da rua\",\n  \"numero\": 100,\n  \"bairro\": \"Bairro\",\n  \"cidade\": \"Cidade\",\n  \"estado\":\"UF\",\n  \"cep\": \"12345678\",\n\t\"complemento\": \"Complemento\"\n}"
             },
             "parameters": [],
             "headers": [
@@ -137,7 +241,7 @@
         {
             "_id": "req_2b7100614c714c77a0ff06312b65fa46",
             "parentId": "fld_38d9350a588f493aa3bb5ad88ecb2d7f",
-            "modified": 1626884351253,
+            "modified": 1626895937277,
             "created": 1626786532624,
             "url": "{{ heroku }}/endereco",
             "name": "VER ENDERECO",
@@ -294,7 +398,7 @@
             "modified": 1626884367008,
             "created": 1626711015812,
             "url": "{{ heroku }}/carrinho/4",
-            "name": "DELETEAR PRODUTO DO CARRINHO",
+            "name": "DELETE PRODUTO",
             "description": "Rota para deletar um produto do carrinho por ID do produto, exclusiva para usuários do tipo cliente.",
             "method": "DELETE",
             "body": {},
@@ -358,28 +462,19 @@
             "_type": "request"
         },
         {
-            "_id": "req_355a78d911fe4b32a10f9419911add7f",
+            "_id": "req_640ef8569b024b7bbd52d7454916948b",
             "parentId": "fld_5db76351e52e4d2db07f471a9c5b4685",
-            "modified": 1626884385658,
-            "created": 1626358103663,
-            "url": "{{ heroku }}/produtos",
-            "name": "CADASTRO PRODUTO",
-            "description": "Rota exclusiva para usuários do tipo lojista. É possível ver o id da categoria desejada na rota [GET]https://klchat.herokuapp.com/categorias",
-            "method": "POST",
-            "body": {
-                "mimeType": "application/json",
-                "text": "{\n\t\"descricao\": \"Nome do produto\",\n\t \"marca\": \"Marca do produto\",\n   \"modelo\": \"Modelo do produto\",\n   \"qtd_estoque\": 10,\n   \"valor_unitario\": 800,\n   \"categoria_id\": 1\n}"
-            },
+            "modified": 1626898382643,
+            "created": 1626894797017,
+            "url": "{{ heroku }}/produtos/1",
+            "name": "VER PRODUTO ID",
+            "description": "Rota aberta, para ver produtos por ID.",
+            "method": "GET",
+            "body": {},
             "parameters": [],
-            "headers": [
-                {
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "id": "pair_36a6700345f34eed8b21578b110637dd"
-                }
-            ],
-            "authentication": { "type": "bearer", "token": "{{token}}" },
-            "metaSortKey": -1626726844589.25,
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1626894797017,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
@@ -402,17 +497,49 @@
             "_type": "request_group"
         },
         {
+            "_id": "req_355a78d911fe4b32a10f9419911add7f",
+            "parentId": "fld_5db76351e52e4d2db07f471a9c5b4685",
+            "modified": 1626898329544,
+            "created": 1626358103663,
+            "url": "{{ local }}/produtos",
+            "name": "CADASTRO PRODUTO",
+            "description": "Rota exclusiva para usuários do tipo lojista. É possível ver o id da categoria desejada na rota [GET]https://klchat.herokuapp.com/categorias",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"descricao\": \"Descricao\",\n\t\"marca\": \"Marca\",\n  \"modelo\": \"Modelo\",\n  \"qtd_estoque\": 10,\n  \"valor_unitario\": 6,\n\t\"categoria_id\": 1\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_36a6700345f34eed8b21578b110637dd"
+                }
+            ],
+            "authentication": { "type": "bearer", "token": "{{token}}" },
+            "metaSortKey": -1626726844589.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_e13a5c798045496499659ed0af098d47",
             "parentId": "fld_5db76351e52e4d2db07f471a9c5b4685",
-            "modified": 1626884390169,
+            "modified": 1626898293714,
             "created": 1626819397131,
-            "url": "{{heroku}}/produtos/2",
+            "url": "{{ heroku }}/produtos/11",
             "name": "EDITAR PRODUTO",
             "description": "Rota para alteração de dados de produtos por ID, exclusiva para usuários do tipo Lojista, deve ser o dono do produto.",
             "method": "PATCH",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"modelo\": \"Nova descricao\"\n}"
+                "text": "{\n\t\"modelo\": \"Novo modelo\"\n}"
             },
             "parameters": [],
             "headers": [
@@ -436,31 +563,31 @@
         {
             "_id": "req_e02561509b8e448a9508f53e42c3250f",
             "parentId": "fld_5db76351e52e4d2db07f471a9c5b4685",
-            "modified": 1626882379466,
+            "modified": 1626898256592,
             "created": 1626363468987,
             "url": "{{ heroku }}/produtos",
-            "name": "BUSCAR PRODUTOS",
+            "name": "BUSCA PRODUTOS",
             "description": "Rota para consulta de produtos, disponíveis query params abaixo, se nenhum for passado retorna todos os produtos.",
             "method": "GET",
             "body": {},
             "parameters": [
                 {
                     "name": "marca",
-                    "value": "Philips",
+                    "value": "koca",
                     "description": "",
                     "id": "pair_a80ab080e506497cb68e6df308e99a82",
                     "disabled": true
                 },
                 {
                     "name": "descricao",
-                    "value": "led",
+                    "value": "COLA",
                     "description": "",
                     "id": "pair_e52d690453a848beb0420aead08052ed",
                     "disabled": true
                 },
                 {
                     "name": "modelo",
-                    "value": "15",
+                    "value": "",
                     "description": "",
                     "id": "pair_d7dcea2a49074c6d98bda51970ef54a0",
                     "disabled": true
@@ -640,7 +767,7 @@
             "modified": 1626884416011,
             "created": 1626747147233,
             "url": "{{ heroku }}/vendas/11",
-            "name": "VER VENDA POR ID",
+            "name": "VER VENDA ID",
             "description": "Esta rota mostra uma venda por ID, é possível consultar e filtrar as vendas na rota [GET]https://klchat.herokuapp.com/vendas - Rota exclusiva para usuários do tipo Lojista, precisa ser o dono da venda.",
             "method": "GET",
             "body": {},
@@ -749,13 +876,13 @@
         {
             "_id": "env_ee87dc013ea5aeb95a7ff852254d895180246ea7",
             "parentId": "wrk_95cd314d3a2f47038960c48fc46b1a3b",
-            "modified": 1626881628763,
+            "modified": 1626898678152,
             "created": 1626284890076,
             "name": "Base Environment",
             "data": {
                 "local": "http://localhost:5000",
                 "heroku": "https://klchat.herokuapp.com",
-                "token": "Fornecido na rota [POST] - https://klchat.herokuapp.com/login"
+                "token": "Token disponibilizado pela rota de login"
             },
             "dataPropertyOrder": { "&": ["local", "heroku", "token"] },
             "color": null,
