@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2021-07-21T20:18:41.698Z",
+    "__export_date": "2021-07-21T22:51:47.158Z",
     "__export_source": "insomnia.desktop.app:v2020.5.2",
     "resources": [
         {
@@ -61,9 +61,9 @@
         {
             "_id": "req_97808f4059c8458d93447773f3ad64a9",
             "parentId": "fld_b91ca755271d4da9a767eea9f7d7d00d",
-            "modified": 1626898068415,
+            "modified": 1626900500306,
             "created": 1626287014801,
-            "url": "{{ local }}/login",
+            "url": "{{ heroku }}/login",
             "name": "LOGIN",
             "description": "Gera um token de acesso do tipo Beater Token JWT.",
             "method": "POST",
@@ -501,7 +501,7 @@
             "parentId": "fld_5db76351e52e4d2db07f471a9c5b4685",
             "modified": 1626898329544,
             "created": 1626358103663,
-            "url": "{{ local }}/produtos",
+            "url": "{{ heroku }}/produtos",
             "name": "CADASTRO PRODUTO",
             "description": "Rota exclusiva para usuários do tipo lojista. É possível ver o id da categoria desejada na rota [GET]https://klchat.herokuapp.com/categorias",
             "method": "POST",
@@ -641,7 +641,8 @@
                     "name": "status",
                     "value": "aprovado",
                     "description": "",
-                    "id": "pair_99663f88383f43a8a05ac3dcbc8e1885"
+                    "id": "pair_99663f88383f43a8a05ac3dcbc8e1885",
+                    "disabled": true
                 }
             ],
             "headers": [],
@@ -893,7 +894,7 @@
         {
             "_id": "jar_ee87dc013ea5aeb95a7ff852254d895180246ea7",
             "parentId": "wrk_95cd314d3a2f47038960c48fc46b1a3b",
-            "modified": 1626284890107,
+            "modified": 1626900660386,
             "created": 1626284890107,
             "name": "Default Jar",
             "cookies": [],
