@@ -677,7 +677,7 @@
             "url": "{{ heroku }}/vendas/17/cancelar",
             "name": "CANCELAR VENDA",
             "description": "Esta rota Cancela uma venda que está com o status Aguardando pagamento por ID da venda, é possível consultar e filtrar as vendas na rota [GET]https://klchat.herokuapp.com/vendas - Rota exclusiva para usuários do tipo Lojista, precisa ser o dono da venda.",
-            "method": "GET",
+            "method": "PATCH",
             "body": {},
             "parameters": [],
             "headers": [],
@@ -712,7 +712,7 @@
             "url": "{{ heroku }}/vendas/17/aprovar",
             "name": "APROVAR VENDA",
             "description": "Esta rota aprova uma venda que está com o status Aguardando pagamento por ID da venda, é possível consultar e filtrar as vendas na rota [GET]https://klchat.herokuapp.com/vendas - Rota exclusiva para usuários do tipo Lojista, precisa ser o dono da venda.",
-            "method": "GET",
+            "method": "PATCH",
             "body": { "mimeType": "application/json", "text": "" },
             "parameters": [],
             "headers": [
@@ -741,7 +741,7 @@
             "url": "{{ heroku }}/vendas/17/despachar",
             "name": "DESPACHAR PRODUTOS",
             "description": "Esta rota Despacha os produtos de uma venda que está com o status Aprovado por ID da venda, é possível consultar e filtrar as vendas na rota [GET]https://klchat.herokuapp.com/vendas - Rota exclusiva para usuários do tipo Lojista, precisa ser o dono da venda.",
-            "method": "GET",
+            "method": "PATCH",
             "body": { "mimeType": "application/json", "text": "" },
             "parameters": [],
             "headers": [
